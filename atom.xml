@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://StarryFeatheys.github.io</id>
+    <title>Astra@博客</title>
+    <updated>2024-10-09T12:15:47.512Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://StarryFeatheys.github.io"/>
+    <link rel="self" href="https://StarryFeatheys.github.io/atom.xml"/>
+    <logo>https://StarryFeatheys.github.io/images/avatar.png</logo>
+    <icon>https://StarryFeatheys.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2024, Astra@博客</rights>
+    <entry>
+        <title type="html"><![CDATA[Life never fades away in the vastness, I am reborn in the greenery.]]></title>
+        <id>https://StarryFeatheys.github.io/post/hello-word/</id>
+        <link href="https://StarryFeatheys.github.io/post/hello-word/">
+        </link>
+        <updated>2024-10-04T08:20:25.000Z</updated>
+        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://StarryFeatheys.github.io/post-images/1728031507207.jpg" alt="" loading="lazy"></figure>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[StarryFeatheys的测试文章]]></title>
+        <id>https://StarryFeatheys.github.io/post/starryfeatheys-de-ce-shi-wen-zhang/</id>
+        <link href="https://StarryFeatheys.github.io/post/starryfeatheys-de-ce-shi-wen-zhang/">
+        </link>
+        <updated>2024-10-03T03:32:58.000Z</updated>
+        <content type="html"><![CDATA[<p>😛😛😛💗💗💗</p>
+]]></content>
+    </entry>
+</feed>
