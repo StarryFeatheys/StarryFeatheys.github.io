@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="keywords" content="Gridea静态个人博客">
+<meta name="description" content="">
+<meta name="theme-color" content="#000">
+<title>Astra@博客</title>
+<link rel="shortcut icon" href="/favicon.ico?v=1729691851854">
+<link rel="stylesheet" href="/styles/main.css">
+<link rel="stylesheet" href="/media/css/gemini.css">
+
+<link rel="stylesheet" href="/media/fonts/font-awesome.css">
+<link
+  href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Rosario:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext"
+  rel="stylesheet" type="text/css">
+
+<link href="/media/hljs/styles/androidstudio.css"
+  rel="stylesheet">
+
+<script src="/media/hljs/highlight.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.ui.min.js"></script>
+
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+
+  <meta name="description" content="">
+</head>
+
+<body>
+  <div class="head-top-line"></div>
+  <div class="header-box">
+    
+<div class="gemini">
+  <header class="header  ">
+    <div class="blog-header box-shadow-wrapper bg-color " id="header">
+      <div class="nav-toggle" id="nav_toggle">
+        <div class="toggle-box">
+          <div class="line line-top"></div>
+          <div class="line line-center"></div>
+          <div class="line line-bottom"></div>
+        </div>
+      </div>
+      <div class="site-meta">       
+        <div class="site-title">
+          
+            <a href="/" class="brand">
+              <span>Astra@博客</span>
+            </a>  
+          
+        </div>
+        
+          <p class="subtitle">心灵之旅，寻漫浪之所</p>
+        
+      </div>
+      <nav class="site-nav" id="site_nav">
+        <ul id="nav_ul">
+          
+            
+            
+              
+            
+            <li class="nav-item ">
+              
+              
+                <a href="/" target="_self">
+                  <i class="fa fa-home"></i> 首页
+                </a>
+              
+            </li>
+          
+            
+            
+              
+            
+            <li class="nav-item nav-item-active">
+              
+              
+                <a href="/archives/" target="_self">
+                  <i class="fa fa-archive"></i> 归档
+                </a>
+              
+            </li>
+          
+            
+            
+              
+            
+            <li class="nav-item ">
+              
+              
+                <a href="/tags/" target="_self">
+                  <i class="fa fa-tags"></i> 标签
+                </a>
+              
+            </li>
+          
+            
+            
+              
+            
+            <li class="nav-item ">
+              
+              
+                <a href="/post/about/" target="_self">
+                  <i class="fa fa-user"></i> 关于
+                </a>
+              
+            </li>
+          
+            
+            
+              
+            
+            <li class="nav-item ">
+              
+              
+                <a href="https://starryfeatheys.github.io/moon//" target="_self">
+                  <i class="fa fa-globe"></i> 导航
+                </a>
+              
+            </li>
+          
+          
+            
+              <li class="nav-item ">
+                <a href="/friends/" target="_self">
+                  
+                    <i class="fa fa-address-book"></i> 友情链接
+                  
+                </a>
+              </li>
+            
+          
+        </ul>
+      </nav>
+    </div>
+  </header>
+</div>
+
+<script type="text/javascript"> 
+ 
+  let showNav = true;
+
+  let navToggle = document.querySelector('#nav_toggle'),
+  siteNav = document.querySelector('#site_nav');
+  
+  function navClick() {
+    let sideBar = document.querySelector('.sidebar');
+    let navUl = document.querySelector('#nav_ul');
+    navToggle.classList.toggle('nav-toggle-active');
+    siteNav.classList.toggle('nav-menu-active');
+    if (siteNav.classList.contains('nav-menu-active')) {
+      siteNav.style = "height: " + (navUl.children.length * 42) +"px !important";
+    } else {
+      siteNav.style = "";
+    }
+  }
+
+  navToggle.addEventListener('click',navClick);  
+</script>
+  </div>
+  <div class="main-continer">
+    
+    <div
+      class="section-layout  gemini">
+      <div class="section-layout-wrapper">
+        <div id="sidebarMeta" class="sidebar">
+    
+<div class="sidebar-wrapper box-shadow-wrapper bg-color">
+  <div class="sidebar-item">
+    <img class="site-author-image right-motion" src="/images/avatar.png"/>
+    <p class="site-author-name">Astra</p>
+    
+  </div>
+  <div class="sidebar-item side-item-stat right-motion">
+    <div class="sidebar-item-box">
+      <a href="/archives/">
+        
+        <span class="site-item-stat-count">3</span>
+        <span class="site-item-stat-name">文章</span>
+      </a>
+    </div>
+    <div class="sidebar-item-box">
+      <a href="">
+        <span class="site-item-stat-count">0</span>
+        <span class="site-item-stat-name">分类</span>
+      </a>
+    </div>
+    <div class="sidebar-item-box">
+      <a href="/tags/">
+        <span class="site-item-stat-count">0</span>
+        <span class="site-item-stat-name">标签</span>
+      </a>
+    </div>
+  </div>
+  
+    
+      <div class="sidebar-item">
+        <span class="site-item-rss">
+            <i class="fa fa-rss"></i>
+            <a href="https://StarryFeatheys.github.io/atom.xml" target="_blank">RSS</a>
+        </span>
+      </div>
+    
+  
+  
+    <div class="sidebar-item sidebar-item-social">
+      <div class="social-item">
+        
+          
+            <a href="">
+              <i class="fa fa-globe" title=""></i>
+            </a>
+          
+        
+        
+      </div>
+    </div>
+  
+
+
+</div>
+</div>
+<script>
+  let sidebarMeta = document.querySelector('#sidebarMeta');
+  let scheme = 'gemini';
+  let sidebarWrapper = document.querySelector('.sidebar-wrapper');
+  if (sidebarMeta && (scheme === 'pisces' || scheme === 'gemini')) {
+    document.addEventListener('scroll', function(e) {
+      if (document.scrollingElement.scrollTop > parseInt(sidebarMeta.style.marginTop) + 10) {
+        sidebarWrapper.classList.add('home-sidebar-fixed')
+      } else {
+        sidebarWrapper.classList.remove('home-sidebar-fixed')
+      }
+    });
+  }
+  </script>
+        <div class="section-box box-shadow-wrapper">
+          <section class="section archives-section bg-color posts-expand">
+            
+
+<div class="bg-color">
+  <div class="archive-timeline-box">
+    <div class="archive-timeline-title">
+      
+        <h2>非常好！目前共计3篇日志，继续努力！</h2>
+      
+    </div>
+    
+      
+      
+        <div class="node-title">
+          <h2 class="tag-year">2024</h2>
+        </div>    
+        
+      
+      <a href="https://StarryFeatheys.github.io/post/ru-he-da-po-xin-xi-chong-fang/">
+        <div class="motion-warpper tag-archive-node">
+          <div class="tag-node">
+            <h1>
+              10-23
+              <small>如何打破信息茧房</small>
+            </h1>
+          </div>  
+      </div>
+      </a>
+    
+      
+      
+      <a href="https://StarryFeatheys.github.io/post/xue-xi-de-ben-zhi-ji-zhi-de-chong-fu-yu-jian-chi/">
+        <div class="motion-warpper tag-archive-node">
+          <div class="tag-node">
+            <h1>
+              10-23
+              <small>学习的本质：极致的重复与坚持</small>
+            </h1>
+          </div>  
+      </div>
+      </a>
+    
+      
+      
+      <a href="https://StarryFeatheys.github.io/post/huan-ge-jiao-du-shi-jie-jiang-bu-tong/">
+        <div class="motion-warpper tag-archive-node">
+          <div class="tag-node">
+            <h1>
+              10-23
+              <small>换个角度，世界将不同</small>
+            </h1>
+          </div>  
+      </div>
+      </a>
+    
+  </div>
+  
+<div class="page bg-color">
+  <ul class="pagination-ul">
+    
+    
+      
+        <li class="pagination-li pagination-active">
+            <a href="/archives/page/../">
+              1
+            </a>
+        </li>
+      
+    
+    
+  </ul>
+</div>
+</div>
+
+          </section>
+        </div>
+      </div>
+    </div>
+    <div class="footer-box">
+  <footer class="footer">
+    <div class="copyright">
+   © 2024 Powered By <a href="https://starryfeatheys.github.io/" target="_blank">Astra</a>
+    </div>
+    <div class="poweredby">
+      
+    </div>
+  </footer>
+  
+  
+  <div class="gemini back-to-top" id="back_to_top">
+    <i class="fa fa-arrow-up"></i>
+    
+    <span class="scrollpercent">
+      <span id="back_to_top_text">0</span>%
+    </span>
+    
+  </div>
+  
+  
+  
+</div>
+<script>
+
+  let sideBarOpen = 'sidebar-open';
+  let body = document.body;
+  let back2Top = document.querySelector('#back_to_top'),
+  back2TopText = document.querySelector('#back_to_top_text'),
+  drawerBox = document.querySelector('#drawer_box'),
+  rightSideBar = document.querySelector('.sidebar'),
+  viewport = document.querySelector('body');
+
+  function scrollAnimation(currentY, targetY) {
+   
+    let needScrollTop = targetY - currentY
+    let _currentY = currentY
+    setTimeout(() => {
+      const dist = Math.ceil(needScrollTop / 10)
+      _currentY += dist
+      window.scrollTo(_currentY, currentY)
+      if (needScrollTop > 10 || needScrollTop < -10) {
+        scrollAnimation(_currentY, targetY)
+      } else {
+        window.scrollTo(_currentY, targetY)
+      }
+    }, 1)
+  }
+
+  back2Top.addEventListener("click", function(e) {
+    scrollAnimation(document.scrollingElement.scrollTop, 0);
+    e.stopPropagation();
+    return false;
+  });
+  
+  window.addEventListener('scroll', function(e) {
+    let percent = document.scrollingElement.scrollTop / (document.scrollingElement.scrollHeight - document.scrollingElement.clientHeight) * 100;
+    if (percent > 1 && !back2Top.classList.contains('back-top-active')) {
+      back2Top.classList.add('back-top-active');
+    }
+    if (percent == 0) {
+      back2Top.classList.remove('back-top-active');
+    }
+    if (back2TopText) {
+      back2TopText.textContent = Math.floor(percent);
+    }
+  });
+
+  
+  let hasCacu = false;
+  window.onresize = function() {
+    if (window.width > 991) {
+      calcuHeight();
+    } else {
+      hasCacu = false;
+    }
+  }
+
+  function calcuHeight() {
+    // 动态调整站点概览高度
+    if (!hasCacu && back2Top.classList.contains('pisces') || back2Top.classList.contains('gemini')) {
+      let sideBar = document.querySelector('.sidebar');
+      let navUl = document.querySelector('#site_nav');
+      sideBar.style = 'margin-top:' + (navUl.offsetHeight + navUl.offsetTop + 15) + 'px;';
+      hasCacu = true;
+    }
+  }
+  calcuHeight();
+  
+  let open = false, MOTION_TIME = 300, RIGHT_MOVE_DIS = '320px';
+
+  if (drawerBox) {
+    let rightMotions = document.querySelectorAll('.right-motion');
+    let right = drawerBox.classList.contains('right');
+
+    let transitionDir = right ? "transition.slideRightIn" : "transition.slideLeftIn";
+
+    let openProp, closeProp;
+    if (right) {
+      openProp = {
+        paddingRight: RIGHT_MOVE_DIS 
+      };
+      closeProp = {
+        paddingRight: '0px'
+      };
+    } else {
+      openProp = {
+        paddingLeft: RIGHT_MOVE_DIS 
+      };
+      closeProp = {
+        paddingLeft: '0px'
+      };
+    }
+
+    drawerBox.onclick = function() {
+      open = !open;
+      window.Velocity(rightSideBar, 'stop');
+      window.Velocity(viewport, 'stop');
+      window.Velocity(rightMotions, 'stop');
+      if (open) {
+        window.Velocity(rightSideBar, {
+          width: RIGHT_MOVE_DIS
+        }, {
+          duration: MOTION_TIME,
+          begin: function() {
+            window.Velocity(rightMotions, transitionDir,{ });
+          }
+        })
+        window.Velocity(viewport, openProp,{
+          duration: MOTION_TIME
+        });
+      } else {
+        window.Velocity(rightSideBar, {
+          width: '0px'
+        }, {
+          duration: MOTION_TIME,
+          begin: function() {
+            window.Velocity(rightMotions, {
+              opacity: 0
+            });
+          }
+        })
+        window.Velocity(viewport, closeProp ,{
+          duration: MOTION_TIME
+        });
+      }
+      for (let i = 0; i < drawerBox.children.length; i++) {
+        drawerBox.children[i].classList.toggle('muse-line');
+      }
+      drawerBox.classList.toggle(sideBarOpen);
+    }
+  }
+
+  // 链接跳转
+  let newWindow = 'false'
+  if (newWindow === 'true') {
+    let links = document.querySelectorAll('.post-body a')
+    links.forEach(item => {
+      if (!item.classList.contains('btn')) {
+        item.setAttribute("target","_blank");
+      }
+    })
+  }
+  // 代码高亮
+  hljs.initHighlightingOnLoad();
+
+</script>
+  </div>
+  <!-- 复制弹窗提示开始 -->
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script>
+  window.onload = function(){
+    document.body.oncopy = function() {
+      swal({
+        title: "复制成功！",
+        text: "若要转载请务必保留原文链接并注明来源，谢谢合作！",
+        icon: "success",
+        buttons: false,
+        closeOnClickOutside: false,
+        timer: 3000,
+     });
+    };
+  }
+</script>
+<!-- 复制弹窗提示结束 -->
+</body>
+<input hidden id="copy" />
+<script>
+  //拿来主义(真香)^_^，Clipboard 实现摘自掘金 https://juejin.im/post/5aefeb6e6fb9a07aa43c20af
+  window.Clipboard = (function (window, document, navigator) {
+    var textArea,
+      copy;
+
+    // 判断是不是ios端
+    function isOS() {
+      return navigator.userAgent.match(/ipad|iphone/i);
+    }
+    //创建文本元素
+    function createTextArea(text) {
+      textArea = document.createElement('textArea');
+      textArea.value = text;
+      textArea.style.width = 0;
+      textArea.style.height = 0;
+      textArea.clientHeight = 0;
+      textArea.clientWidth = 0;
+      document.body.appendChild(textArea);
+    }
+    //选择内容
+    function selectText() {
+      var range,
+        selection;
+
+      if (isOS()) {
+        range = document.createRange();
+        range.selectNodeContents(textArea);
+        selection = window.getSelection();
+        selection.removeAllRanges();
+        selection.addRange(range);
+        textArea.setSelectionRange(0, 999999);
+      } else {
+        textArea.select();
+      }
+    }
+
+    //复制到剪贴板
+    function copyToClipboard() {
+      try {
+        document.execCommand("Copy")
+      } catch (err) {
+        alert("复制错误！请手动复制！")
+      }
+      document.body.removeChild(textArea);
+    }
+
+    copy = function (text) {
+      createTextArea(text);
+      selectText();
+      copyToClipboard();
+    };
+
+    return {
+      copy: copy
+    };
+  })(window, document, navigator);
+
+  function copyCode(e) {
+    if (e.srcElement.tagName === 'SPAN' && e.srcElement.classList.contains('copy-code')) {
+      let code = e.currentTarget.querySelector('code');
+      var text = code.innerText;
+      if (e.srcElement.textContent === '复制成功') {
+        console.log('复制操作频率过高');
+        return;
+      }
+      e.srcElement.textContent = '复制成功';
+      (function (elem) {
+        setTimeout(() => {
+          if (elem.textContent === '复制成功') {
+            elem.textContent = '复制代码'
+          }
+        }, 1000);
+      })(e.srcElement)
+      Clipboard.copy(text);
+    }
+  }
+
+  let pres = document.querySelectorAll('pre');
+  pres.forEach(pre => {
+    let code = pre.querySelector('code');
+    let copyElem = document.createElement('span');
+    copyElem.classList.add('copy-code');
+    copyElem.textContent = '复制代码';
+    pre.appendChild(copyElem);
+    pre.onclick = copyCode
+  })
+</script>
+<script src="/media/js/motion.js"></script>
+
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+<script>
+  var scroll = new SmoothScroll('a[href*="#"]', {
+    speed: 500
+  });
+</script>
+
+<!-- <div class="search-mask" id="search_mask">
+  <div class="search-box">
+    <div class="search-title">
+      <i class="fa fa-search"></i>
+      <div class="input-box">
+        <input type="text" placeholder="搜索">
+      </div>
+      <i class="fa fa-times-circle"></i>
+    </div>
+    <div class="result">
+      
+      <div class="item">
+        <a class="result-title" href="https://StarryFeatheys.github.io/post/ru-he-da-po-xin-xi-chong-fang/"" data-c="
+          &lt;p&gt;在这个信息爆炸的时代，我们看似身处信息的海洋，却常常被困在“信息茧房”之中。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;一、信息茧房的定义与本质&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;信息茧房指的是人们的信息获取往往会被自己的兴趣所引导，从而将自己束缚在一个狭窄的信息空间里。其本质是一种共鸣（或共情）成瘾，我们只愿意看到自己想看到的，而对另一面的观点和想法选择性忽视。&lt;/p&gt;
+&lt;p&gt;这种现象的危害不容小觑。它不仅限制了我们的视野，使我们难以接触到多元的观点和信息，导致思维的狭隘和偏见的加深，还让我们失去了对复杂世界全面、客观的认知和理解能力。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;二、如何打破信息茧房&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;🎯 主动拓展知识领域&lt;br&gt;
+勇敢地跳出自己熟悉的舒适区，积极探索未曾涉足的知识领域，拓宽视野。&lt;/p&gt;
+&lt;p&gt;🎯 多元化信息渠道&lt;br&gt;
+广泛关注不同类型、不同风格的权威媒体和信息源，避免信息来源的单一化。&lt;/p&gt;
+&lt;p&gt;🎯 积极参与观点碰撞&lt;br&gt;
+热情参与各种有深度、有不同观点交锋的讨论，以开放的心态倾听和理解他人的看法。&lt;/p&gt;
+&lt;p&gt;🎯 培养批判性思维&lt;br&gt;
+对接收的信息保持警惕，深入思考、分析，不盲目跟从，敢于质疑和挑战固有观念。&lt;/p&gt;
+&lt;p&gt;🎯 定期自我反思与调整&lt;br&gt;
+时常审视自己的信息获取习惯和认知偏见，发现问题及时改进。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;三、个人总结&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;在深入思考信息茧房这一现象后，我深刻认识到它对个人成长和社会发展的阻碍。我们生活在一个多元且复杂的世界中，不能被自己的偏好和偏见所蒙蔽。&lt;/p&gt;
+&lt;p&gt;打破信息茧房需要我们有勇气面对不同的声音，有决心改变固有的习惯。只有这样，我们才能不断丰富自己的认知，提升思考能力，以更加全面和客观的视角去理解这个世界。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;让我们共同努力，挣脱信息茧房的束缚，拥抱更广阔、更多元的世界！&lt;/p&gt;
+&lt;hr&gt;
+">如何打破信息茧房</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" href="https://StarryFeatheys.github.io/post/xue-xi-de-ben-zhi-ji-zhi-de-chong-fu-yu-jian-chi/"" data-c="
+          &lt;p&gt;&lt;strong&gt;学习，一场与自我的深度对话，其本质究竟为何？答案呼之欲出：极致的重复与坚持。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;💡&lt;strong&gt;如何做到有效的重复？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;🎯 第一、批判思考，温故而知新&lt;/p&gt;
+&lt;p&gt;每次重复学习时，都要进行批判思考，温故而知新。从已学的知识点中挖掘新的认知。每一次的重复，都能让我们的理解更深入，这便是构建知识体系的过程。&lt;/p&gt;
+&lt;p&gt;🎯 第二、多种重复形式互相结合&lt;/p&gt;
+&lt;p&gt;仅仅依靠笔记或口头表述是远远不够的，要将听、说、读、写充分调动起来，相互融合。通过坚持不懈的重复，积累数量，方能彰显质量。&lt;/p&gt;
+&lt;p&gt;🎯 第三：间隔式重复&lt;/p&gt;
+&lt;p&gt;若想将知识转化为长期记忆，集中式重复仅对短期记忆有所助益，考前临时抱佛脚便是典型例子。间隔式重复则需依据所学知识点及自身时间安排，灵活调整重复的次数与频率。艾宾浩斯遗忘曲线，恰如其分地揭示了这一记忆规律。&lt;/p&gt;
+&lt;p&gt;🎯 第四：大量应用&lt;/p&gt;
+&lt;p&gt;让知识“活”起来！学习绝非单纯的记忆，关键在于运用掌握的知识点去化解一个个具体难题。在应用过程中，进一步深化对知识的领悟。&lt;/p&gt;
+&lt;p&gt;罗振宇曾言：成功＝核心算法 x 大量重复动作的平方。他说道：“人生算法乃是在面对世界时，不断重复的最基本套路，找到它、重复它、强化它、优化它，直至大脑能够随心运用。”&lt;/p&gt;
+&lt;p&gt;记性欠佳？那就勤做笔记。毕竟，好记性不如烂笔头。智商平平？那就笨鸟先飞，且要多飞，坚持到底方为贵。&lt;/p&gt;
+&lt;p&gt;学习的本质在于：重复、重复、极致重复，坚持、坚持、极致坚持，直至熟能生巧、巧能运用，最终形成肌肉记忆。重复，乃是培育自律和毅力的必经之路。唯有通过持续不断的学习、锲而不舍的坚持，方能战胜重重困难，砥砺前行。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;作家托尔斯泰讲道：“最易之事乃为贫乏与失败，唯有凭借持之以恒的努力、坚持和重复，我们方可斩获成功。”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;p&gt;学习之旅或许荆棘丛生，但只要我们将重复与坚持铭记于心，付诸实践，就必定能采撷知识的丰硕果实，迈向成功的康庄大道。让我们在求知的漫漫征途中，披荆斩棘，勇往直前，以重复和坚持谱写属于自己的璀璨华章！&lt;/p&gt;
+&lt;hr&gt;
+">学习的本质：极致的重复与坚持</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" href="https://StarryFeatheys.github.io/post/huan-ge-jiao-du-shi-jie-jiang-bu-tong/"" data-c="
+          &lt;p&gt;从水中倒影看世界，仿佛窥见另一个维度。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;倒影中的景象，既真实又虚幻。&lt;/strong&gt; 水波荡漾间，熟悉的景物变得扭曲而神秘，像是被施了魔法的画卷。这种虚幻之美，让我们意识到，眼中的现实并非唯一的真相。&lt;/p&gt;
+&lt;p&gt;换个角度看待生活，或许会发现不一样的美。就如同在困境中，我们若能转换视角，不再执着于眼前的艰难，而是从挫折中寻找成长的契机，往往能收获意想不到的感悟。&lt;/p&gt;
+&lt;p&gt;正如水中倒影，逆境中的反思就像是那平静水面下的深沉思考。它让我们有机会审视自己的内心，重新评估所面临的挑战。&lt;/p&gt;
+&lt;hr&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://StarryFeatheys.github.io/post-images/1729687475164.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;2&#34;&gt;&lt;img src=&#34;https://StarryFeatheys.github.io/post-images/1729687483637.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;3&#34;&gt;&lt;img src=&#34;https://StarryFeatheys.github.io/post-images/1729687492053.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;hr&gt;
+&lt;p&gt;愿我们都能拥有转换视角的勇气和智慧，在生活的波澜中，发现那隐藏在平凡背后的绚烂光芒。&lt;/p&gt;
+">换个角度，世界将不同</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" href="https://StarryFeatheys.github.io/post/about/"" data-c="
+          &lt;h1 id=&#34;漫步在astra的博客世界&#34;&gt;漫步在「Astra」的博客世界&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;博主&lt;/strong&gt;：建辉&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;兴趣爱好&lt;/strong&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;心向自由，兴趣随心而生，所爱皆可学。
+&lt;ul&gt;
+&lt;li&gt;运动，是身体与灵魂的共舞，在汗水挥洒中感受生命的律动。&lt;/li&gt;
+&lt;li&gt;摄影，是时光的定格，用镜头捕捉世间的美好瞬间。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;博客更新&lt;/strong&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;遵循内心的节奏，更新亦随缘，灵感来时，文字与图片自然流淌。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;博客详情&lt;/strong&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;主题&lt;/strong&gt;：Next&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;方案&lt;/strong&gt;：免费，基于 GitHub Pages 和 Gridea ，无需服务器部署。
+&lt;ul&gt;
+&lt;li&gt;感恩 GitHub Pages 提供的便捷部署服务。&lt;/li&gt;
+&lt;li&gt;也感谢 Gridea 带来的高效创作体验。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;博客意义&lt;/strong&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;因一时兴趣而起，随心布置这一方小天地。&lt;/li&gt;
+&lt;li&gt;旨在互联网的浩渺星空中，拥有属于自己的独特角落。&lt;/li&gt;
+&lt;li&gt;既能珍藏自己的过往经历，留下岁月的痕迹。&lt;/li&gt;
+&lt;li&gt;又能将自身的感悟与经验，分享给远方的陌生朋友。&lt;/li&gt;
+&lt;li&gt;愿能如点点繁星，在您的心中闪烁，哪怕带来一丝微光，也是莫大的欣慰。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;欢迎您踏入这片充满随性与真挚的博客空间，愿您在此找到温暖与启示。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;愿我们在这纷繁世间，随心而行，不负时光。&lt;/p&gt;
+">关于</a>
+      </div>
+      
+    </div>
+  </div>
+</div>
+<script>
+  // var escape = "[{&#34;content&#34;:&#34;&lt;p&gt;在这个信息爆炸的时代，我们看似身处信息的海洋，却常常被困在“信息茧房”之中。&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;一、信息茧房的定义与本质&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;信息茧房指的是人们的信息获取往往会被自己的兴趣所引导，从而将自己束缚在一个狭窄的信息空间里。其本质是一种共鸣（或共情）成瘾，我们只愿意看到自己想看到的，而对另一面的观点和想法选择性忽视。&lt;/p&gt;\n&lt;p&gt;这种现象的危害不容小觑。它不仅限制了我们的视野，使我们难以接触到多元的观点和信息，导致思维的狭隘和偏见的加深，还让我们失去了对复杂世界全面、客观的认知和理解能力。&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;二、如何打破信息茧房&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;🎯 主动拓展知识领域&lt;br&gt;\n勇敢地跳出自己熟悉的舒适区，积极探索未曾涉足的知识领域，拓宽视野。&lt;/p&gt;\n&lt;p&gt;🎯 多元化信息渠道&lt;br&gt;\n广泛关注不同类型、不同风格的权威媒体和信息源，避免信息来源的单一化。&lt;/p&gt;\n&lt;p&gt;🎯 积极参与观点碰撞&lt;br&gt;\n热情参与各种有深度、有不同观点交锋的讨论，以开放的心态倾听和理解他人的看法。&lt;/p&gt;\n&lt;p&gt;🎯 培养批判性思维&lt;br&gt;\n对接收的信息保持警惕，深入思考、分析，不盲目跟从，敢于质疑和挑战固有观念。&lt;/p&gt;\n&lt;p&gt;🎯 定期自我反思与调整&lt;br&gt;\n时常审视自己的信息获取习惯和认知偏见，发现问题及时改进。&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;三、个人总结&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;在深入思考信息茧房这一现象后，我深刻认识到它对个人成长和社会发展的阻碍。我们生活在一个多元且复杂的世界中，不能被自己的偏好和偏见所蒙蔽。&lt;/p&gt;\n&lt;p&gt;打破信息茧房需要我们有勇气面对不同的声音，有决心改变固有的习惯。只有这样，我们才能不断丰富自己的认知，提升思考能力，以更加全面和客观的视角去理解这个世界。&lt;/p&gt;\n&lt;hr&gt;\n&lt;p&gt;让我们共同努力，挣脱信息茧房的束缚，拥抱更广阔、更多元的世界！&lt;/p&gt;\n&lt;hr&gt;\n&#34;,&#34;fileName&#34;:&#34;ru-he-da-po-xin-xi-chong-fang&#34;,&#34;abstract&#34;:&#34;&#34;,&#34;title&#34;:&#34;如何打破信息茧房&#34;,&#34;tags&#34;:[],&#34;date&#34;:&#34;2024-10-23 21:48:16&#34;,&#34;dateFormat&#34;:&#34;2024-10-23&#34;,&#34;feature&#34;:&#34;&#34;,&#34;link&#34;:&#34;https://StarryFeatheys.github.io/post/ru-he-da-po-xin-xi-chong-fang/&#34;,&#34;hideInList&#34;:false,&#34;isTop&#34;:false,&#34;stats&#34;:{&#34;text&#34;:&#34;2 min read&#34;,&#34;time&#34;:114000,&#34;words&#34;:574,&#34;minutes&#34;:2},&#34;description&#34;:&#34;在这个信息爆炸的时代，我们看似身处信息的海洋，却常常被困在“信息茧房”之中。\n一、信息茧房的定义与本质\n信息茧房指的是人们的信息获取往往会被自己的兴趣所引导，从而将自己束缚在一个狭窄的信息空间里。其本质是一种共鸣（或共情）成瘾，我们只愿意看...&#34;,&#34;toc&#34;:&#34;&#34;},{&#34;content&#34;:&#34;&lt;p&gt;&lt;strong&gt;学习，一场与自我的深度对话，其本质究竟为何？答案呼之欲出：极致的重复与坚持。&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;💡&lt;strong&gt;如何做到有效的重复？&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;🎯 第一、批判思考，温故而知新&lt;/p&gt;\n&lt;p&gt;每次重复学习时，都要进行批判思考，温故而知新。从已学的知识点中挖掘新的认知。每一次的重复，都能让我们的理解更深入，这便是构建知识体系的过程。&lt;/p&gt;\n&lt;p&gt;🎯 第二、多种重复形式互相结合&lt;/p&gt;\n&lt;p&gt;仅仅依靠笔记或口头表述是远远不够的，要将听、说、读、写充分调动起来，相互融合。通过坚持不懈的重复，积累数量，方能彰显质量。&lt;/p&gt;\n&lt;p&gt;🎯 第三：间隔式重复&lt;/p&gt;\n&lt;p&gt;若想将知识转化为长期记忆，集中式重复仅对短期记忆有所助益，考前临时抱佛脚便是典型例子。间隔式重复则需依据所学知识点及自身时间安排，灵活调整重复的次数与频率。艾宾浩斯遗忘曲线，恰如其分地揭示了这一记忆规律。&lt;/p&gt;\n&lt;p&gt;🎯 第四：大量应用&lt;/p&gt;\n&lt;p&gt;让知识“活”起来！学习绝非单纯的记忆，关键在于运用掌握的知识点去化解一个个具体难题。在应用过程中，进一步深化对知识的领悟。&lt;/p&gt;\n&lt;p&gt;罗振宇曾言：成功＝核心算法 x 大量重复动作的平方。他说道：“人生算法乃是在面对世界时，不断重复的最基本套路，找到它、重复它、强化它、优化它，直至大脑能够随心运用。”&lt;/p&gt;\n&lt;p&gt;记性欠佳？那就勤做笔记。毕竟，好记性不如烂笔头。智商平平？那就笨鸟先飞，且要多飞，坚持到底方为贵。&lt;/p&gt;\n&lt;p&gt;学习的本质在于：重复、重复、极致重复，坚持、坚持、极致坚持，直至熟能生巧、巧能运用，最终形成肌肉记忆。重复，乃是培育自律和毅力的必经之路。唯有通过持续不断的学习、锲而不舍的坚持，方能战胜重重困难，砥砺前行。&lt;/p&gt;\n&lt;blockquote&gt;\n&lt;p&gt;作家托尔斯泰讲道：“最易之事乃为贫乏与失败，唯有凭借持之以恒的努力、坚持和重复，我们方可斩获成功。”&lt;/p&gt;\n&lt;/blockquote&gt;\n&lt;hr&gt;\n&lt;p&gt;学习之旅或许荆棘丛生，但只要我们将重复与坚持铭记于心，付诸实践，就必定能采撷知识的丰硕果实，迈向成功的康庄大道。让我们在求知的漫漫征途中，披荆斩棘，勇往直前，以重复和坚持谱写属于自己的璀璨华章！&lt;/p&gt;\n&lt;hr&gt;\n&#34;,&#34;fileName&#34;:&#34;xue-xi-de-ben-zhi-ji-zhi-de-chong-fu-yu-jian-chi&#34;,&#34;abstract&#34;:&#34;&#34;,&#34;title&#34;:&#34;学习的本质：极致的重复与坚持&#34;,&#34;tags&#34;:[],&#34;date&#34;:&#34;2024-10-23 21:27:29&#34;,&#34;dateFormat&#34;:&#34;2024-10-23&#34;,&#34;feature&#34;:&#34;&#34;,&#34;link&#34;:&#34;https://StarryFeatheys.github.io/post/xue-xi-de-ben-zhi-ji-zhi-de-chong-fu-yu-jian-chi/&#34;,&#34;hideInList&#34;:false,&#34;isTop&#34;:false,&#34;stats&#34;:{&#34;text&#34;:&#34;3 min read&#34;,&#34;time&#34;:133000,&#34;words&#34;:669,&#34;minutes&#34;:3},&#34;description&#34;:&#34;学习，一场与自我的深度对话，其本质究竟为何？答案呼之欲出：极致的重复与坚持。\n💡如何做到有效的重复？\n🎯 第一、批判思考，温故而知新\n每次重复学习时，都要进行批判思考，温故而知新。从已学的知识点中挖掘新的认知。每一次的重复，都能让我们的...&#34;,&#34;toc&#34;:&#34;&#34;},{&#34;content&#34;:&#34;&lt;p&gt;从水中倒影看世界，仿佛窥见另一个维度。&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;倒影中的景象，既真实又虚幻。&lt;/strong&gt; 水波荡漾间，熟悉的景物变得扭曲而神秘，像是被施了魔法的画卷。这种虚幻之美，让我们意识到，眼中的现实并非唯一的真相。&lt;/p&gt;\n&lt;p&gt;换个角度看待生活，或许会发现不一样的美。就如同在困境中，我们若能转换视角，不再执着于眼前的艰难，而是从挫折中寻找成长的契机，往往能收获意想不到的感悟。&lt;/p&gt;\n&lt;p&gt;正如水中倒影，逆境中的反思就像是那平静水面下的深沉思考。它让我们有机会审视自己的内心，重新评估所面临的挑战。&lt;/p&gt;\n&lt;hr&gt;\n&lt;figure data-type=\&#34;image\&#34; tabindex=\&#34;1\&#34;&gt;&lt;img src=\&#34;https://StarryFeatheys.github.io/post-images/1729687475164.jpg\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;/figure&gt;\n&lt;figure data-type=\&#34;image\&#34; tabindex=\&#34;2\&#34;&gt;&lt;img src=\&#34;https://StarryFeatheys.github.io/post-images/1729687483637.jpg\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;/figure&gt;\n&lt;figure data-type=\&#34;image\&#34; tabindex=\&#34;3\&#34;&gt;&lt;img src=\&#34;https://StarryFeatheys.github.io/post-images/1729687492053.jpg\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;/figure&gt;\n&lt;hr&gt;\n&lt;p&gt;愿我们都能拥有转换视角的勇气和智慧，在生活的波澜中，发现那隐藏在平凡背后的绚烂光芒。&lt;/p&gt;\n&#34;,&#34;fileName&#34;:&#34;huan-ge-jiao-du-shi-jie-jiang-bu-tong&#34;,&#34;abstract&#34;:&#34;&#34;,&#34;title&#34;:&#34;换个角度，世界将不同&#34;,&#34;tags&#34;:[],&#34;date&#34;:&#34;2024-10-23 20:32:04&#34;,&#34;dateFormat&#34;:&#34;2024-10-23&#34;,&#34;feature&#34;:&#34;&#34;,&#34;link&#34;:&#34;https://StarryFeatheys.github.io/post/huan-ge-jiao-du-shi-jie-jiang-bu-tong/&#34;,&#34;hideInList&#34;:false,&#34;isTop&#34;:false,&#34;stats&#34;:{&#34;text&#34;:&#34;1 min read&#34;,&#34;time&#34;:47000,&#34;words&#34;:237,&#34;minutes&#34;:1},&#34;description&#34;:&#34;从水中倒影看世界，仿佛窥见另一个维度。\n倒影中的景象，既真实又虚幻。 水波荡漾间，熟悉的景物变得扭曲而神秘，像是被施了魔法的画卷。这种虚幻之美，让我们意识到，眼中的现实并非唯一的真相。\n换个角度看待生活，或许会发现不一样的美。就如同在困境中...&#34;,&#34;toc&#34;:&#34;&#34;},{&#34;content&#34;:&#34;&lt;h1 id=\&#34;漫步在astra的博客世界\&#34;&gt;漫步在「Astra」的博客世界&lt;/h1&gt;\n&lt;p&gt;&lt;strong&gt;博主&lt;/strong&gt;：建辉&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;兴趣爱好&lt;/strong&gt;：&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;心向自由，兴趣随心而生，所爱皆可学。\n&lt;ul&gt;\n&lt;li&gt;运动，是身体与灵魂的共舞，在汗水挥洒中感受生命的律动。&lt;/li&gt;\n&lt;li&gt;摄影，是时光的定格，用镜头捕捉世间的美好瞬间。&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;博客更新&lt;/strong&gt;：&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;遵循内心的节奏，更新亦随缘，灵感来时，文字与图片自然流淌。&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;博客详情&lt;/strong&gt;：&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;strong&gt;主题&lt;/strong&gt;：Next&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;方案&lt;/strong&gt;：免费，基于 GitHub Pages 和 Gridea ，无需服务器部署。\n&lt;ul&gt;\n&lt;li&gt;感恩 GitHub Pages 提供的便捷部署服务。&lt;/li&gt;\n&lt;li&gt;也感谢 Gridea 带来的高效创作体验。&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;博客意义&lt;/strong&gt;：&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;因一时兴趣而起，随心布置这一方小天地。&lt;/li&gt;\n&lt;li&gt;旨在互联网的浩渺星空中，拥有属于自己的独特角落。&lt;/li&gt;\n&lt;li&gt;既能珍藏自己的过往经历，留下岁月的痕迹。&lt;/li&gt;\n&lt;li&gt;又能将自身的感悟与经验，分享给远方的陌生朋友。&lt;/li&gt;\n&lt;li&gt;愿能如点点繁星，在您的心中闪烁，哪怕带来一丝微光，也是莫大的欣慰。&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;欢迎您踏入这片充满随性与真挚的博客空间，愿您在此找到温暖与启示。&lt;/p&gt;\n&lt;hr&gt;\n&lt;p&gt;愿我们在这纷繁世间，随心而行，不负时光。&lt;/p&gt;\n&#34;,&#34;fileName&#34;:&#34;about&#34;,&#34;abstract&#34;:&#34;&#34;,&#34;title&#34;:&#34;关于&#34;,&#34;tags&#34;:[],&#34;date&#34;:&#34;2024-10-06 19:09:48&#34;,&#34;dateFormat&#34;:&#34;2024-10-06&#34;,&#34;feature&#34;:&#34;&#34;,&#34;link&#34;:&#34;https://StarryFeatheys.github.io/post/about/&#34;,&#34;hideInList&#34;:true,&#34;isTop&#34;:false,&#34;stats&#34;:{&#34;text&#34;:&#34;2 min read&#34;,&#34;time&#34;:64000,&#34;words&#34;:313,&#34;minutes&#34;:2},&#34;description&#34;:&#34;漫步在「Astra」的博客世界\n博主：建辉\n兴趣爱好：\n\n心向自由，兴趣随心而生，所爱皆可学。\n\n运动，是身体与灵魂的共舞，在汗水挥洒中感受生命的律动。\n摄影，是时光的定格，用镜头捕捉世间的美好瞬间。\n\n\n\n博客更新：\n\n遵循内心的节奏，更...&#34;,&#34;toc&#34;:&#34;&lt;ul class=\&#34;markdownIt-TOC\&#34;&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E6%BC%AB%E6%AD%A5%E5%9C%A8astra%E7%9A%84%E5%8D%9A%E5%AE%A2%E4%B8%96%E7%95%8C\&#34;&gt;漫步在「Astra」的博客世界&lt;/a&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&#34;}]";
+  // var json = escape.substr(1, escape.length - 2);
+  // var datas = json.split(',');
+  // for (let i=0; i < datas.length; i++) {
+  //   let item = datas[i];
+  //   let attrs = item.split('34;:&#34')
+  //   debugger
+  //   console.log(datas[i])
+  // }
+  let escapeMap = new Map();
+  escapeMap.set('&#34;', '"');
+  escapeMap.set('&gt;', '>');
+  escapeMap.set('&#39;', "'");
+  escapeMap.set('&lt;', '<');
+  escapeMap.set('&quot;', '"');
+  escapeMap.set('&amp;', '&');
+</script> -->
+
+
+
+</html>
